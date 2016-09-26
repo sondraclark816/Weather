@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Weather Panel</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script type='text/javascript' src='weather.js'></script>
+    <link rel="stylesheet" href="yetiEdit.css">
+
+</head>
+
+<body>
+  <nav class = ' navbar navbar-inverse'>
+      <div class= 'container-fluid'>
+          <a class='navbar-brand' class='nav navbar-nav' href='#'>The Weather Panel</a>
+        </div>
+    
+    
+    <div class = 'col-md-6'>
+       <form>
+          <input type = 'text'  placeholder = 'Enter ZIP Here' id= 'lookup'>
+          <button type = 'button'  id = 'add' onclick = 'generateCard()' >Add</button>
+          <ul id = 'list'></ul>
+          <div class="fb-share-button" style="float:right; border: 4px dotted #ffffff; color: #ffffff;" data-href="file:///Users/christiancampbell/Desktop/TEKY1/week_2/Weather/weather2.html" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u&amp;src=sdkpreparse"><b><u>Share</u></b></a></div>
+        </form>
+
+     </div>
+    </nav>
+
+      <div class="container">
+       <div class="row" id="cards">
+        </div>
+    </div>
+
+<div id="templateDiv" style="display: none;">
+        <div class='col-sm-3'>
+            <div class='row' style='text-align: right; border-top: 2px solid #8b4513; border-radius: 20px; padding: 15px' ><u>**citySt**</u></div>
+            <div class='row' style='text-align: center; border-top: 2px solid #8b4513; border-radius: 20px; padding: 15px' ><u>Current</u><br>**currentTemp**<br>**condition**</div>
+            <div class='row' style='text-align: center; border-top: 2px solid #8b4513; border-radius: 20px: padding: 15px' ><u><br>High</u> <br> **maxTemp**<br></div>
+            <div class='row' style='text-align: center; border-top: 2px solid #8b4513; border-radius: 20px; padding: 15px' ><u>Low</u> <br> **minTemp**</div>
+            <div class='row' style='text-align: center; border-top: 2px solid #8b4513; border-radius: 20px; padding: 15px' ><u>Precipitation <br></u> **rainChance**</div>
+          
+
+        </div>
+    </div>
+
+   
+
+    
+
+    
+
+
+</body>
+
+</html>
